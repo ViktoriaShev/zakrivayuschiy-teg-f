@@ -1,1 +1,14 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --Inter-Variable: "Inter-Variable", sans-serif;
+  --PressStart2P: "PressStart2P-Regular", sans-serif;
+  --for-titles: 700;
+  --for-p: 400;
+  --accent-color: #000;
+  --background-color: #fff;
+  --for-initial-lin-gradient: #e7e7e7;
+  --for-finite-lin-gradient: #1a1a1a;
+  --accent-repeating-gradiend: #d3d3d3;
+  --stroke-color: #ffffff;
+  --width-container: clamp(375px, 100%, 700px);
+}
