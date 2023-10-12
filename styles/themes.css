@@ -13,6 +13,7 @@
   --for-finite-lin-gradient: #004306;
   --accent-repeating-gradiend: #000;
   --stroke-color: #000;
+  --color-button: #00cc14;
 }
 
 :root.theme-light {
@@ -24,6 +25,7 @@
   --for-finite-lin-gradient: #1a1a1a;
   --accent-repeating-gradiend: #d3d3d3;
   --stroke-color: #ffffff;
+  --color-button: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,5 +38,6 @@
     --for-finite-lin-gradient: #004306;
     --accent-repeating-gradiend: #000;
     --stroke-color: #000;
+    --color-button: #00cc14;
   }
 }

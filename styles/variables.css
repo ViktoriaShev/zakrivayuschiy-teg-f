@@ -11,4 +11,6 @@
   --accent-repeating-gradiend: #d3d3d3;
   --stroke-color: #ffffff;
   --width-container: clamp(375px, 100%, 700px);
+  --color-button: white;
+  --for-fill-heart: red;
 }

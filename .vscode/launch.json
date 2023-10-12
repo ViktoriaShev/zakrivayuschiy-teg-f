@@ -1,3 +1,12 @@
 {
-  "configurations": []
+  "configurations": [
+    {
+      "args": ["task"],
+      "name": "Gulp task",
+      "program": "${workspaceFolder}/node_modules/gulp/bin/gulp.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    }
+  ]
 }
