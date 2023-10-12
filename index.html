@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
-    <link rel="icon" href="./images/favicon.ico" size="any" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
@@ -18,14 +18,9 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <div
-      aria-hidden="true"
-      class="decoration-element"
-      alt="Градиентный узор на фоне"
-    ></div>
     <header class="header">
       <div class="logo-group">
-        <h1 class="main-title">&lt/HTML&gt</h1>
+        <h1 class="main-title">&lt;/HTML&gt;</h1>
         <h2 class="main-subtitle">закрывающий тег</h2>
       </div>
       <nav class="theme-menu header__theme-menu">
@@ -63,9 +58,9 @@
           <img
             class="image image-feature-start"
             src="./images/нулевая.jpg"
-            alt="Изображение фургона, к которому применяются фильтры "
+            alt="Изображение проезжающего в ночи поезда, к которому применяются фильтры "
           />
-          <h3 class="mini-title">&lt/HTML&gt</h3>
+          <h4 class="mini-title">&lt;/HTML&gt;</h4>
         </div>
         <div class="text-content">
           <p>
@@ -122,9 +117,9 @@
           <img
             class="image image-feature-first-sprint"
             src="./images/первая.jpg"
-            alt="Изображение фургона, к которому применяются фильтры "
+            alt="Изображение яркой игровой консоли, к которому применяются фильтры "
           />
-          <h3 class="mini-title">&lt/HTML&gt</h3>
+          <h4 class="mini-title">&lt;/HTML&gt;</h4>
         </div>
         <div class="text-content">
           <p>
@@ -183,9 +178,9 @@
           <img
             class="image image-feature-first-soft"
             src="./images/вторая.jpg"
-            alt="Изображение фургона, к которому применяются фильтры "
+            alt="Изображение радуги в небе, к которому применяются фильтры "
           />
-          <h3 class="mini-title">&lt/HTML&gt</h3>
+          <h4 class="mini-title">&lt;CSS&gt;</h4>
         </div>
         <div class="text-content">
           <p>
@@ -242,9 +237,9 @@
           <img
             class="image image-feature-second-sprint"
             src="./images/третья.jpg"
-            alt="Изображение фургона, к которому применяются фильтры "
+            alt="Изображение картины, висящей в галерее, к которому применяются фильтры "
           />
-          <h3 class="mini-title">&lt/HTML&gt</h3>
+          <h4 class="mini-title">&lt;desigions&gt;</h4>
         </div>
         <div class="text-content">
           <p>
@@ -303,9 +298,9 @@
           <img
             class="image image-feature-second-soft"
             src="./images/четвертая.jpg"
-            alt="Изображение фургона, к которому применяются фильтры "
+            alt="Изображение котика с барабаном на плечах, к которому применяются фильтры "
           />
-          <h3 class="mini-title">&lt/HTML&gt</h3>
+          <h4 class="mini-title">&lt;care&gt;</h4>
         </div>
         <div class="text-content">
           <p>
@@ -365,9 +360,9 @@
           <img
             class="image image-feature-third-sprint"
             src="./images/пятая.jpg"
-            alt="Изображение фургона, к которому применяются фильтры "
+            alt="Изображение школы и части баскетбольного поля с кольцом, к которому применяются фильтры "
           />
-          <h3 class="mini-title">&lt/HTML&gt</h3>
+          <h4 class="mini-title">&lt;support&gt;</h4>
         </div>
         <div class="text-content">
           <p>
@@ -427,9 +422,9 @@
           <img
             class="image image-feature-third-soft"
             src="./images/шестая.jpg"
-            alt="Изображение фургона, к которому применяются фильтры "
+            alt="Изображение кусочка оранжереи, к которому применяются фильтры "
           />
-          <h3 class="mini-title">&lt/HTML&gt</h3>
+          <h4 class="mini-title">&lt;lifes-style: none;&gt;</h4>
         </div>
         <div class="text-content">
           <p>
@@ -488,9 +483,9 @@
           <img
             class="image image-the-end"
             src="./images/седьмая.jpg"
-            alt="Изображение фургона, к которому применяются фильтры "
+            alt="Изображение скелета сидящего у монитора, к которому применяются фильтры "
           />
-          <h3 class="mini-title">&lt/HTML&gt</h3>
+          <h4 class="mini-title">&lt;experience&gt;</h4>
         </div>
         <div class="text-content">
           <p>
@@ -553,8 +548,8 @@
           onclick="window['dialog-save'].showModal();"
           aria-controls="dialog-save"
         >
-          <svg viewBox="0 0 28 28" width="28px" height="28px" class="save-icon">
-            <use fill="currentColor" href="./svg/floppyy.svg#save-icon"></use>
+          <svg class="save-icon" width="28px" height="28px">
+            <use href="./svg/floppyy.svg#save-icon"></use>
           </svg>
           <span class="save-as-memory">Сохранить на память</span>
         </button>
@@ -570,13 +565,15 @@
         <use fill="currentColor" href="./svg/floppyy.svg#save-icon"></use>
       </svg>
       <p class="text-ok">Вставьте дискету, чтобы продолжить</p>
-      <button
-        type="button"
-        onclick="window['dialog-save'].close()"
-        class="button-ok"
-      >
-        <span class="button-ok-text">OK </span>
-      </button>
+      <form method="dialog">
+        <button
+          type="button"
+          onclick="window['dialog-save'].close()"
+          class="button-ok"
+        >
+          <span class="button-ok-text">OK </span>
+        </button>
+      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>

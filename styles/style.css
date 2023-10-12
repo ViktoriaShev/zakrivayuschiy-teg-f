@@ -12,66 +12,21 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-@keyframes arrow {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(4px);
-  }
-}
-
-@keyframes a-big-heart {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.5);
-  }
-}
-
-@keyframes appearance-sparks {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .page {
   position: relative;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--for-p);
-  background-color: var(--background-color);
   color: var(--accent-color);
   font-family: var(--PressStart2P);
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
-}
-
-.decoration-element {
-  position: absolute;
-  inset: 0;
   z-index: -1;
-  height: clamp(41.688rem, 35.239rem + 27.512vw, 60rem);
-  width: 100%;
-  background-image: repeating-linear-gradient(
-      var(--accent-repeating-gradiend) 0px 2px,
-      rgb(0 0 0 / 0) 2px 4px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      var(--accent-repeating-gradiend) 0px 2px,
-      rgb(0 0 0 / 0) 2px 4px
-    ),
-    linear-gradient(
-      var(--for-initial-lin-gradient) 0% 0.01%,
-      var(--for-finite-lin-gradient)
-    );
+  background: var(--background);
+  background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 }
 
 .header {
@@ -112,9 +67,12 @@
 }
 
 .theme-menu.header__theme-menu {
-  margin: 25px 0px;
+  margin: 25px 0px 25px 15px;
   display: flex;
   justify-content: center;
+}
+
+@media (width >= 1440px) {
 }
 
 .theme-menu__list {
@@ -129,11 +87,13 @@
   background-color: transparent;
   border: none;
   padding: 0px;
+  text-transform: uppercase;
 }
 
 .theme-menu__item {
   padding: 0px;
   font-size: 14px;
+  max-height: 14px;
 }
 
 .theme-menu__button:hover {
@@ -185,18 +145,18 @@
   text-align: center;
   bottom: 2px;
   opacity: 0.6;
-  animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
 .content {
   width: var(--width-container);
   align-self: center;
   justify-self: center;
-  background-color: var(--background-color);
+  background: var(--background);
 }
 
 .section-content {
   border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
   margin-bottom: 50px;
 }
 
@@ -295,7 +255,7 @@
   margin: 0px 25px 25px 0;
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 4px;
   justify-content: end;
 }
 
@@ -334,6 +294,11 @@
 }
 
 .card__icon-button {
+  height: 42px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: 2px solid transparent;
 }
@@ -392,15 +357,6 @@
   transition: fill 0.3s 0.06s linear;
 }
 
-.like-icon.is-liked .heart {
-  transform-origin: center;
-  animation: a-big-heart 0.3s ease-in 0.1s alternate;
-}
-
-.like-icon.is-liked .sparks {
-  animation: appearance-sparks 0.3s ease-in 0.3s alternate;
-}
-
 .like-icon .contour {
   fill: var(--accent-color);
   transition: fill 0.1s linear 0s;
@@ -430,8 +386,9 @@
 
 .footer {
   width: var(--width-container);
-  margin: 0 auto 100px auto;
-  background-color: var(--background-color);
+  margin: 0 auto;
+  padding-bottom: 100px;
+  background: var(--background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,14 +399,12 @@
 }
 
 .save-button-memory {
-  min-height: 51px;
-  max-height: 80px;
+  min-height: 80px;
   position: relative;
   padding: 0;
   gap: 8px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border: 2px solid var(--accent-color);
@@ -492,23 +447,25 @@
 }
 
 .save-icon {
+  display: block;
   position: relative;
-  z-index: 6;
+  width: 39px;
+  height: 39px;
+  margin: -5px 0;
+  transform-origin: center;
+  z-index: 1;
   color: var(--color-button);
   mix-blend-mode: difference;
-}
-
-@media (width >= 375px) {
-  .save-icon {
-    width: 28px;
-    height: 28px;
-  }
+  transform: scale(0.72);
 }
 
 @media (width >= 846px) {
   .save-icon {
-    width: 21px;
-    height: 21px;
+    transform: scale(0.54);
+    margin: 0px -7.8px;
+  }
+  .save-button-memory {
+    min-height: 51px;
   }
   .save-button-memory {
     flex-direction: row;
@@ -544,6 +501,7 @@
   grid-area: svg;
   width: 39px;
   height: 39px;
+  transform: scale(1);
 }
 
 .button-ok {

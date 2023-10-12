@@ -6,6 +6,20 @@
   --for-p: 400;
   --accent-color: #000;
   --background-color: #fff;
+  --background: repeating-linear-gradient(
+      var(--accent-repeating-gradiend) 0px 2px,
+      rgb(0 0 0 / 0) 2px 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--accent-repeating-gradiend) 0px 2px,
+      rgb(0 0 0 / 0) 2px 4px
+    ),
+    linear-gradient(
+      var(--for-initial-lin-gradient) 0% 0.01%,
+      var(--for-finite-lin-gradient)
+    ),
+    var(--background-color);
   --for-initial-lin-gradient: #e7e7e7;
   --for-finite-lin-gradient: #1a1a1a;
   --accent-repeating-gradiend: #d3d3d3;
