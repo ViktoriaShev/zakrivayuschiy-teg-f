@@ -338,10 +338,6 @@
   transition: mix-blend-mode 0.5s ease-in-out;
 }
 
-.container-footer {
-  width: clamp(19.375rem, 18.737rem + 2.723vw, 21.188rem);
-}
-
 .footer {
   width: var(--width-container);
   margin: 0 auto;
@@ -352,6 +348,7 @@
 }
 
 .container-footer {
+  width: clamp(19.375rem, 18.737rem + 2.723vw, 21.188rem);
   background-color: var(--background-color);
 }
 
@@ -421,10 +418,9 @@
     transform: scale(0.54);
     margin: 0px -7.8px;
   }
+
   .save-button-memory {
     min-height: 55px;
-  }
-  .save-button-memory {
     flex-direction: row;
   }
 }
